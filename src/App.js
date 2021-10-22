@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import {Counter} from "./Componentes/Contador"
+import Counter from "./Componentes/Contador"
+import Productos from "./Componentes/Productos";
 import {Navegacion} from "./Componentes/Navegacion"
 import {Footer} from "./Componentes/Footer"
 
@@ -10,6 +11,7 @@ function App() {
       <nav>
         <Navegacion />
       </nav>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
@@ -33,6 +35,7 @@ function App() {
         <p>
           <h1>Me sumo al componente app</h1>
           <Counter />
+          <Productos />
         </p>
       </main>
 

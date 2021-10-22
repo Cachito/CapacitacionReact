@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-export class Counter extends Component {
+class Counter extends Component {
 
     constructor() {
         super(); // podría borrarlo pero deboi agregar render.
@@ -20,16 +20,19 @@ export class Counter extends Component {
             <div>
               <h1>{this.state.contador}</h1>
             </div>
+
             <div>
-              <button class="btn btn-dark" onClick={this.handlerIncrement}>
+              <button className="btn btn-dark" onClick={this.handlerIncrement}>
                 {" "}
-                Incrementar el contador{" "}
+                Incrementar el contador
+                {" "}
               </button>
             </div>
+
           </>
           // solo puedo devolver un único elemento html en jsx a menos que lo envuelva en otro elemento o un react fragment
         );
     }
 }
 
-// export default Counter
+export default Counter
